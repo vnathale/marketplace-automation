@@ -42,7 +42,6 @@ describe ('Créditos em Combustível', ()=>{
         //Finalizar Resgate
         cy.contains('Finalizar compra').click({force:true})
         cy.wait (30000)
-
     })
 })
 
