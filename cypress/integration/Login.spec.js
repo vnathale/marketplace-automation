@@ -6,6 +6,7 @@ describe ('Realizar Login', ()=>{
         cy.viewport(1400, 900)
         
         cy.visit('https://padrao-qa2.webpremios.digital/') 
+        cy.screenshot()
 
         cy.on('uncaught:exception', (err, runnable) => {return false})     
 
@@ -21,11 +22,14 @@ describe ('Realizar Login', ()=>{
         
         //Digite o seu Login ou CPF/CNPJ.
         cy.get('input[id="username"]').type(login.cpf)
+        cy.screenshot()
         cy.get('button[id="btnContinue"]').click()
-
+        cy.screenshot()
         //Agora digite a sua senha.
         cy.get('input[id="password"]').type(login.password)
-        cy.get('button[id="btnEntrar"]').click() 
+        cy.screenshot()
+        cy.get('button[id="btnEntrar"]').click()
+        cy.screenshot()        
         cy.wait (10000)
     })
 })

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="75.9210" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-08-29T18:02:09" tests="0" file="cypress/integration/ShellBox.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Créditos em Combustível" timestamp="2022-08-29T18:02:09" tests="1" time="75.9210" failures="0">
-    <testcase name="Créditos em Combustível Usuário deverá realizar o resgate do ShellBox com sucesso" time="75.9210" classname="Usuário deverá realizar o resgate do ShellBox com sucesso">
-    </testcase>
-  </testsuite>
-</testsuites>
