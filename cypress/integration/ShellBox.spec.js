@@ -35,12 +35,15 @@ describe ('Créditos em Combustível', ()=>{
         cy.get('.effect > span:nth-child(2)').click();
         //Li e aceito os termos
         cy.contains('termos').click()
+        cy.screenshot()
         cy.wait (10000)
         cy.get('button[id="Agree-desktop-termos-do-regulamento-de-shell-box"]').click()
+        cy.screenshot()
         cy.wait (10000)
    
         //Finalizar Resgate
         cy.contains('Finalizar compra').click({force:true})
+        cy.screenshot()
         cy.wait (30000)
     })
 })

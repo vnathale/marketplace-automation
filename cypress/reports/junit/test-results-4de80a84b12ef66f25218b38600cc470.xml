@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0000" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2022-08-30T18:05:14" tests="0" file="cypress/integration/Pedidos.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Verificar Pedidos" timestamp="2022-08-30T18:05:14" tests="1" time="0.0000" failures="1">
+    <testcase name="Verificar Pedidos Usuário deverá verificar pedidos confirmados" time="0.0000" classname="Usuário deverá verificar pedidos confirmados">
+      <failure message="Timed out retrying after 4000ms: Expected to find content: &apos;tracking-count color-success txt-center txt-font-body pos-absolute&apos; but never did." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find content: 'tracking-count color-success txt-center txt-font-body pos-absolute' but never did.
+    at Context.eval (https://padrao-qa2.webpremios.digital/__cypress/tests?p=cypress\integration\Pedidos.spec.js:119:8)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
