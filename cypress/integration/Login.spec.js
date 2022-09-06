@@ -21,7 +21,7 @@ describe ('Realizar Login', ()=>{
         }
         
         //Digite o seu Login ou CPF/CNPJ.
-        cy.get('input[id="username"]').type(login.cpf)
+        cy.get('input[name="username"]').type(login.cpf)
         cy.screenshot()
         cy.get('button[id="btnContinue"]').click()
         cy.screenshot()

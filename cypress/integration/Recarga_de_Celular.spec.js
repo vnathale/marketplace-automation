@@ -2,8 +2,11 @@
 
 
 
-describe ('Verificar Pedidos', ()=>{
-    it ('Usuário deverá verificar pedidos confirmados', ()=>{
+
+
+
+describe ('Recarga de Celular', ()=>{
+    it ('Usuário deverá realizar a recarga de celular com sucesso', ()=>{
         cy.viewport(1400, 900)
 
         cy.visit('https://padrao-qa2.webpremios.digital/') 
@@ -19,23 +22,30 @@ describe ('Verificar Pedidos', ()=>{
         }
        
         //Digite o seu Login ou CPF/CNPJ.
-        cy.get('input[name="username"]').type(login.cpf)
+        cy.get('input[id="username"]').type(login.cpf)
         cy.get('button[id="btnContinue"]').click() //Clicar no Botão Continuar
         cy.screenshot()
-
-
         //Agora digite a sua senha.
         cy.get('input[id="password"]').type(login.password)
         cy.get('button[id="btnEntrar"]').click() 
         cy.wait(1000)
         cy.screenshot()
-        //Clicar no botão perfil do Cliente
-        cy.get('button[id="profile-menu"]').click()
+        //Realizar recarga de celular com sucesso
+        cy.visit('https://padrao-qa2.webpremios.digital/mobile-recharge')
         cy.screenshot()
-        //Verificar Pedidos do cliente 
-        cy.visit('https://padrao-qa2.webpremios.digital/my-orders?days=30')//Verificar Todos os pedidos do cliente
+        //Selecionar operadora Claro
+        cy.contains('operadora').click()
         cy.screenshot()
-        cy.wait(5000)
-    
+        cy.wait(1000)
+
+        //Informar numero para recarga
+            var celular = {
+            numero1: '971291364',
+            numero2: '996607844'
+            }
+
+        cy.get('input[id="telefone"]').type(celular.numero1)
+        cy.screenshot()           
+                                     
     })
 })
