@@ -1,0 +1,48 @@
+
+
+describe("Acessando Login do participante com sucesso", ()=>{
+
+
+
+    it('Consulta ao realizar login do participante', ()=>{
+ 
+ 
+ 
+ cy.request({
+     method: 'POST',
+     form: true,
+     url: 'https://cloudloyaltyapimanqa1.azure-api.net/onboarding/v1/api/participant',
+     headers: {
+       'Content-Type': 'text/plain',  
+       'Accept': 'application/json, text/plain, */*', 
+       'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+       'Authorization': 'Bearer null',
+       'Connection': 'keep-alive',
+       'Content-Type': 'application/json;charset=UTF-8',
+       'Geolocation': '{"date":"2022-09-08T14:08:05.105Z","coords":{"altitude":null,"latitude":-23.5569152,"longitude":-46.4683008,"accuracy":741.4387409901977}}',
+       'Ocp-Apim-Subscription-Key': '694dc599410549648d1de24856395fac',
+       'Ocp-Apim-Trace': 'true', 
+       'Origin': 'https://auth.padrao-qa2.webpremios.digital',
+       'Referer': 'https://auth.padrao-qa2.webpremios.digital/',
+       'Sec-Fetch-Dest': 'empty',
+       'Sec-Fetch-Mode': 'cors',
+       'Sec-Fetch-Site': 'cross-site',
+       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36',
+       'sec-ch-ua': 'Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104',
+       'sec-ch-ua-mobile': '?0',
+       'sec-ch-ua-platform': '"Windows"'
+     },
+     body: {       
+       "projectId": 1,
+       "encodedDocumentNumber": "MjI1OTAzNTEwODk=",
+     }
+   }).then(response => {
+        expect(response.status).to.equal(200) 
+ 
+        expect(response.body.success).to.equal('true')
+   })
+ 
+  })
+ 
+})
+
