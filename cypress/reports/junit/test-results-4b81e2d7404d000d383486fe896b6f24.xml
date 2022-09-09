@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="28.6850" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-09-05T15:14:34" tests="0" file="cypress/integration/Recarga_de_Celular.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Recarga de Celular" timestamp="2022-09-05T15:14:34" tests="1" time="28.6850" failures="0">
-    <testcase name="Recarga de Celular Usuário deverá realizar a recarga de celular com sucesso" time="28.6850" classname="Usuário deverá realizar a recarga de celular com sucesso">
-    </testcase>
-  </testsuite>
-</testsuites>

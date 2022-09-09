@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="34.0530" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-09-05T15:13:46" tests="0" file="cypress/integration/Pedidos.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Verificar Pedidos" timestamp="2022-09-05T15:13:47" tests="1" time="34.0530" failures="0">
-    <testcase name="Verificar Pedidos Usuário deverá verificar pedidos confirmados" time="34.0530" classname="Usuário deverá verificar pedidos confirmados">
-    </testcase>
-  </testsuite>
-</testsuites>
