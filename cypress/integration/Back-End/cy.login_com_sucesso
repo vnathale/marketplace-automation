@@ -1,0 +1,25 @@
+
+
+
+
+describe("Testes automaticos da API consulta CEP", ()=>{
+    it('Consulta de um CEP válido', ()=>{
+        cy.request({
+            method: 'GET',
+            url: 'https://auth.padrao-qa2.webpremios.digital/oauth2/userInfo',
+            failOnStatusCode: false
+        }).as('response')
+        cy.get('@response').should((response)=>{
+            //expect(response.status).to.equal(200)
+            //expect(response.body.sub).to.equal('97969860-22c1-4cb4-9250-0650e1661441')
+            expect(response.body.email_verified).to.equal('false')
+            expect(response.body.name).to.equal('José Luiz')
+            expect(response.body.phone_number_verified).to.equal('false')
+            expect(response.body.phone_number).to.equal('+5519967443471')                    
+            expect(response.body.email).to.equal('bruna.nunes@ltm.digital')
+            expect(response.body.username).to.equal('22590351089')
+
+        })
+    })
+
+})
