@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.8830" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-09-19T19:59:19" tests="0" file="cypress/integration/Back-End/cy.viacep" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Realizar consulta de CEP" timestamp="2022-09-19T19:59:19" tests="1" time="1.8830" failures="0">
+    <testcase name="Realizar consulta de CEP Consulta de um CEP válido" time="1.8830" classname="Consulta de um CEP válido">
+    </testcase>
+  </testsuite>
+</testsuites>
