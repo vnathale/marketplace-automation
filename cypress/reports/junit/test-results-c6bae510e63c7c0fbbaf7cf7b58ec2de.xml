@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.2220" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-11-03T18:55:41" tests="0" file="cypress/integration/Front-End/Homepage.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Homepage" timestamp="2022-11-03T18:55:42" tests="1" time="6.2220" failures="0">
+    <testcase name="Homepage Usuário deverá realizar acesso a homepage do sistema" time="6.2220" classname="Usuário deverá realizar acesso a homepage do sistema">
+    </testcase>
+  </testsuite>
+</testsuites>

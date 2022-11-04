@@ -4,7 +4,7 @@
 
 describe ('Verificar Pedidos', ()=>{
     it ('Usuário deverá verificar pedidos confirmados', ()=>{
-        cy.viewport(1400, 900)
+        cy.viewport(1536, 960)
 
         cy.visit('https://padrao-qa2.webpremios.digital/') 
         
@@ -36,6 +36,7 @@ describe ('Verificar Pedidos', ()=>{
         cy.visit('https://padrao-qa2.webpremios.digital/my-orders?days=30')//Verificar Todos os pedidos do cliente
         cy.screenshot()
         cy.wait(5000)
-    
+        
     })
 })
+

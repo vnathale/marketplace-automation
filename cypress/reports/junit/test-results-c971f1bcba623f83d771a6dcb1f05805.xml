@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="46.5900" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-11-03T17:47:23" tests="0" file="cypress/integration/Front-End/Milhas.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Realizar Resgate de Milhas com sucesso" timestamp="2022-11-03T17:47:23" tests="1" time="46.5900" failures="0">
+    <testcase name="Realizar Resgate de Milhas com sucesso Usuário deverá realizar resgate do Milhas com sucesso" time="46.5900" classname="Usuário deverá realizar resgate do Milhas com sucesso">
+    </testcase>
+  </testsuite>
+</testsuites>

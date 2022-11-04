@@ -1,9 +1,10 @@
 
 
 
-describe ('Realizar Login', ()=>{
-    it ('Usuário deverá realizar acesso ao sistema com sucesso', ()=>{
+describe ('Realizar Resgate de Milhas com sucesso', ()=>{
+    it ('Usuário deverá realizar resgate do Milhas com sucesso', ()=>{
         cy.viewport(1536, 960)
+        
         cy.visit('https://padrao-qa2.webpremios.digital/') 
         cy.screenshot()
 
@@ -30,5 +31,28 @@ describe ('Realizar Login', ()=>{
         cy.get('button[id="btnEntrar"]').click()
         cy.screenshot()        
         cy.wait (10000)
+
+        //Acessar URL de Milhas com sucesso após realziar o Login
+        cy.visit('https://padrao-qa2.webpremios.digital/mileage')
+        cy.contains('Transferir para').click()
+        cy.get('[value="80"]').click()
+        cy.get('input[id="pontos_converter"]').type('10')//Informar quantidades de pontos
+        cy.wait (4000)
+        cy.contains('class="bg-white"').click() //Li e aceito os termos do regulamento
+        cy.wait (4000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     })
 })
