@@ -35,24 +35,21 @@ describe ('Realizar Resgate de Milhas com sucesso', ()=>{
         //Acessar URL de Milhas com sucesso após realziar o Login
         cy.visit('https://padrao-qa2.webpremios.digital/mileage')
         cy.contains('Transferir para').click()
-        cy.get('[value="80"]').click()
+        cy.wait (4000)
+        //Selecionar Cliente
+        
+
+
+
+
+
+
+
+
         cy.get('input[id="pontos_converter"]').type('10')//Informar quantidades de pontos
         cy.wait (4000)
         cy.contains('class="bg-white"').click() //Li e aceito os termos do regulamento
         cy.wait (4000)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     })
 })
